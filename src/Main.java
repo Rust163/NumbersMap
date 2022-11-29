@@ -16,6 +16,7 @@ public class Main {
         map.put("str10" ,10);
 
         Service mapIntegers = new Service();
+
         mapIntegers.addNumbers("map1", 1);
         mapIntegers.addNumbers("map2", 2);
         mapIntegers.addNumbers("map3", 3);
