@@ -15,8 +15,20 @@ public class Main {
         map.put("str9" ,9);
         map.put("str10" ,10);
 
-        for (Map.Entry<String ,Integer>entry :  map.entrySet()) {
-            System.out.printf("%d : %s%n", entry.getValue(), entry.getKey());
-        }
+        Service mapIntegers = new Service();
+        mapIntegers.addNumbers("map1", 1);
+        mapIntegers.addNumbers("map2", 2);
+        mapIntegers.addNumbers("map3", 3);
+        mapIntegers.addNumbers("map4", 4);
+        mapIntegers.addNumbers("map5", 5);
+        mapIntegers.addNumbers("map6", 6);
+        mapIntegers.addNumbers("map7", 7);
+        mapIntegers.addNumbers("map8", 8);
+        mapIntegers.addNumbers("map9", 9);
+//        mapIntegers.addNumbers("map9", 9);
+
+        mapIntegers.printNumbers();
+
+
     }
 }
