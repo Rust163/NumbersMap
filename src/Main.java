@@ -1,33 +1,26 @@
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 public class Main {
     public static void main(String[] args) {
-        Map<String ,Integer> map = new LinkedHashMap<>();
+        Map<Integer, String> map = new HashMap<>();
 
-        map.put("str1" ,1);
-        map.put("str2" ,2);
-        map.put("str3" ,3);
-        map.put("str4" ,4);
-        map.put("str5" ,5);
-        map.put("str6" ,6);
-        map.put("str7" ,7);
-        map.put("str8" ,8);
-        map.put("str9" ,9);
-        map.put("str10" ,10);
+        map.put(1, "str1");
+        map.put(2, "str2");
+        map.put(3, "str3");
+        map.put(4, "str4");
+        map.put(5, "str5");
+        map.put(6, "str6");
+        map.put(7, "str7");
+        map.put(8, "str8");
+        map.put(9, "str9");
+        map.put(10, "str10");
 
-        Service mapIntegers = new Service();
-        mapIntegers.addNumbers("map1", 1);
-        mapIntegers.addNumbers("map2", 2);
-        mapIntegers.addNumbers("map3", 3);
-        mapIntegers.addNumbers("map4", 4);
-        mapIntegers.addNumbers("map5", 5);
-        mapIntegers.addNumbers("map6", 6);
-        mapIntegers.addNumbers("map7", 7);
-        mapIntegers.addNumbers("map8", 8);
-        mapIntegers.addNumbers("map9", 9);
-//        mapIntegers.addNumbers("map9", 9);
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.printf("%d : %s%n", entry.getKey(), entry.getValue());
+        }
 
-        mapIntegers.printNumbers();
+
 
 
     }
